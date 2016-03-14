@@ -1,5 +1,5 @@
 
-RELEASE=1
+RELEASE=2
 
 build:
 	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main github.com/jordic/caddyproxy
