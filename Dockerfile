@@ -2,9 +2,8 @@
 FROM scratch
 MAINTAINER Jordi Collell <j@tmpo.io>
 
-COPY main caddy-gen
-COPY Caddyfile Caddyfile
+ADD main caddygen
+ADD Caddyfile Caddyfile
 
 VOLUME = ["/Caddyfile"]
-ENTRYPOINT = ["/caddy-gen"]
-
+CMD = ["/caddygen"]
